@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conheça o Caribe</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./toggle.js"></script>
 </head>
 <body>
     <section class="showcase">
@@ -39,5 +38,15 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        
+        <script>
+            const menuToggle = document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                showcase.classList.toggle('active');
+            })
+        </script>
+</body>
 </html>
